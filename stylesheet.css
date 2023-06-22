@@ -1,6 +1,7 @@
 :root {
     --Prime: #509ba9;
     --white: whitesmoke;
+    --Dark: #36454f;
   }
 
 * {
@@ -13,6 +14,11 @@
 .wrapper {
     display: flex;
     background-color: var(--Prime);
+}
+
+.wrapper-dark {
+    display: flex;
+    background-color: var(--Dark);
 }
 
 .nav-container {
@@ -62,6 +68,10 @@ hr {
     color: whitesmoke;
 }
 
+.main-content-dark {
+    color: whitesmoke;
+}
+
 section {
     margin: 10px 0 10px 10px;
 }
@@ -69,6 +79,24 @@ section {
 section h1 {
     margin: 10px 0 10px 0;
     color: gold;
+}
+
+.dark-mode-btn {
+    background-color: var(--Prime);
+    color: var(--white);
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 12px;
+    border-style: none;
+    cursor: pointer;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.dark-mode-btn:hover {
+    background-color: var(--white);
+    color: var(--Prime);
 }
 
 /* .section-6 {
