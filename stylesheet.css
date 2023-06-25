@@ -1,7 +1,21 @@
 :root {
-    --Prime: #509ba9;
-    --white: whitesmoke;
-    --Dark: #36454f;
+    /* --Prime: #509ba9;
+    --LighterPrime: #78b4bf;
+    --white: #f5f5f5;
+    --Dark: #2e2e36;
+    --NavGray: #393944;
+    --Gold: #ffd700;
+    --Alt: #e95c4b; */
+
+    --Prime: #32E0C4;
+    --DarkPrime: #0D7377;
+    --LighterPrime: #EEEEEE;
+    --white: #EEEEEE;
+    --Dark: #212121;
+    --Nav: #0D7377;
+    --DarkNav: #333333;
+    --DarkAlt: #bebebe;
+    --Alt: #007f84;
   }
 
 * {
@@ -13,7 +27,7 @@
 
 .wrapper {
     display: flex;
-    background-color: var(--Prime);
+    background-color: var(--white);
 }
 
 .wrapper-dark {
@@ -25,7 +39,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(57, 57, 68);
+    background-color: var(--Nav);
+    position: sticky;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: fit-content;
+    height: 100vh;
+}
+
+.nav-container-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--DarkNav);
     position: sticky;
     left: 0;
     top: 0;
@@ -40,16 +67,29 @@
 }
 
 .nav-li {
-    color: whitesmoke;
+    color: var(--white);
     list-style: none;
     padding: 0.7em 0em 0.7em 0em;
     text-align: center;
     cursor: pointer;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 .nav-li:hover {
     color: var(--Prime);
+}
+
+.nav-li-dark {
+    color: var(--white);
+    list-style: none;
+    padding: 0.7em 0em 0.7em 0em;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-li-dark:hover {
+    color: var(--DarkPrime);
 }
 
 .nav-ul-bottom {
@@ -65,11 +105,11 @@ hr {
 }
 
 .main-content {
-    color: whitesmoke;
+    color: var(--Dark);
 }
 
 .main-content-dark {
-    color: whitesmoke;
+    color: var(--LighterPrime);
 }
 
 section {
@@ -78,7 +118,8 @@ section {
 
 section h1 {
     margin: 10px 0 10px 0;
-    color: gold;
+    /* color: var(--DarkAlt); */
+    color: var(--Alt);
 }
 
 .dark-mode-btn {
@@ -90,8 +131,8 @@ section h1 {
     font-size: 12px;
     border-style: none;
     cursor: pointer;
-    transition: color 0.5s;
-    transition: background-color 0.5s;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .dark-mode-btn:hover {
@@ -99,14 +140,44 @@ section h1 {
     color: var(--Prime);
 }
 
-/* .section-6 {
-    color: blue;
+.dark-mode-btn-dark {
+    background-color: var(--DarkPrime);
+    color: var(--white);
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 12px;
+    border-style: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
 }
 
-.section-7 {
-    color: red;
+.dark-mode-btn-dark:hover {
+    background-color: var(--white);
+    color: var(--DarkPrime);
 }
 
-.section-8 {
-    color: green;
-} */
+.navbar-close-btn {
+    background-color: rgba(255, 255, 255, 0);
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    
+}
+
+.navbar-close-btn:hover {
+    color: var(--Prime);
+}
+
+#close {
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+#close:hover {
+    color: var(--Prime);
+}
