@@ -23,7 +23,7 @@ darkModeBtn.onclick = function() {
     }
 }
 
-let iconClose = document.querySelector('#close')
+let iconClose = document.querySelector('#nav-btn-icon')
 iconClose.onclick = function() {
     if (iconClose.innerHTML == 'close'){
         iconClose.innerHTML = 'menu'
