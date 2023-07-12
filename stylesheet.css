@@ -35,6 +35,8 @@
     background-color: var(--Dark);
 }
 
+/* ----------nav bar style here-----------  */
+
 .nav-container {
     display: flex;
     flex-direction: column;
@@ -44,7 +46,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: fit-content;
+    width: 250px;
     height: 100vh;
 }
 
@@ -57,7 +59,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: fit-content;
+    width: 250px;
     height: 100vh;
 }
 
@@ -92,10 +94,27 @@
     color: var(--DarkPrime);
 }
 
+.nav-container header{
+    position: relative;
+}
+
+.nav-container header .logo{
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.nav-container header .logo img{
+    width: 40px;
+    border-radius: 6px;
+    background-color: var(--DarkNav);
+}
+
 .nav-ul-bottom {
     padding: 0.5em;
     align-items: center;
 }
+
+/* ----------END-----------  */
 
 hr {
     display: inline-block;
